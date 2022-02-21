@@ -1,0 +1,44 @@
+@keyframes popup {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%)
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%)
+    }
+}
+
+.result {
+    animation: popup .4s ease-in-out;
+}
+
+.inputAmount {
+    font-weight: 650;
+    font-size: 1.1rem;
+    color: rgb(138, 139, 141);
+
+}
+
+.result p {
+    margin-bottom: 0.rem;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+
+}
+.newLine {
+    padding-top: 1.5rem;
+  }
+
+.equals {
+    color: rgb(163 43 65);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.span {
+    color: rgb(161, 166, 176);
+}
