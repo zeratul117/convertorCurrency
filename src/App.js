@@ -43,7 +43,7 @@ Rate formular:
               width="30px"
               onError={(e) => e.target.src = "/netrual_flag.png"}
               /> {element.currencyID} - {element.value}
-              </div>
+            </div>
           )});
         });
           return newArray;

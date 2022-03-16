@@ -60,7 +60,7 @@ export const getCurrencyData = () => {
         const fetchData = async () => {
 
             //The API that gets the current values for the currency
-            const response = await axios.get("https://freecurrencyapi.net/api/v2/latest?apikey=f0bb2a50-87b5-11ec-b07b-6fd7c46b25ee");
+            const response = await axios.get("https://api.currencyapi.com/v3/latest?apikey=f0bb2a50-87b5-11ec-b07b-6fd7c46b25ee");
 
             if(response.statusText !== 'OK' && response.status !== 200) {
                 console.log("There was an error", response);

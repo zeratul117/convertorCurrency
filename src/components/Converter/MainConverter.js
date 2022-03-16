@@ -32,7 +32,6 @@ const MainConverter = (props) => {
 
       useEffect(() => {
         //Replaces all characters inside the input everytime the convertion happens
-        console.log(inputValue, "HEEEEEY")
         setInputValue(parseFloat(inputValue.toString().replace(/[^0-9.]/g, '')).toFixed(2));
 
         setResetInput(false);
@@ -79,7 +78,7 @@ const MainConverter = (props) => {
             return;
         }
 
-        let result = (selectToValue.currencyRate / selectFromValue.currencyRate) * inputValue
+        let result = (selectToValue.currencyRate.value / selectFromValue.currencyRate.value ) * inputValue
 
         const objectToShow = {
             inputValue: Math.round(parseFloat(inputValue).toFixed(6) * 100) / 100,
